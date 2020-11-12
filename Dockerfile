@@ -8,11 +8,7 @@ VOLUME ["/usr/portage", "/usr/portage/distfiles", "/packages", "/var/lib/entropy
 ## overlay spaces...
 VOLUME ["/var/db/repos/", "var/lib/layman", "/var/db/repos/gentoo/" "/var/cache/distfiles"]
 
-
 ADD  https://upload.funtoo.org/1.4-release-std/arm-64bit/arm64_generic/stage3-latest.tar.xz /
-
-
-
 
 # Set locales to en_US.UTF-8
 ENV LC_ALL=en_US.UTF-8
