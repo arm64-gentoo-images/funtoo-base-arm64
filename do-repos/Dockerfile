@@ -15,7 +15,7 @@ ADD https://raw.githubusercontent.com/necrose99/arm64-portage/master/repos.conf/
 
 
 # emu kit. '
-COPY ./bin/*  /usr/bin/resin-xbuild
+COPY ./bin/*  /usr/bin/
 
 # test cmd. 
 RUN [ "/usr/bin/qemu-aarch64-static", "/bin/sh", "-c", "ln -s resin-xbuild /usr/bin/cross-build-start; ln -s resin-xbuild /usr/bin/cross-build-end; ln /bin/sh /bin/sh.real" ]
