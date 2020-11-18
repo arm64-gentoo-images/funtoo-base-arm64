@@ -20,3 +20,4 @@ ADD https://github.com/arm64-gentoo-images/funtoo-base-arm64/raw/main/do-repos/b
 
 # test cmd. 
 ENTRYPOINT  [ "/usr/bin/qemu-aarch64-static", "/bin/sh", "-c", "ln -s resin-xbuild /usr/bin/cross-build-start; ln -s resin-xbuild /usr/bin/cross-build-end; ln /bin/sh /bin/sh.real" ]
+RUN ego sync && emerge dev-util/mottainai-agent  dev-util/mottainai-cli dev-util/mottainai-server  dev-util/replicant dev-util/simplestreams-builder 
